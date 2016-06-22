@@ -175,13 +175,14 @@ int postUrl()
     /* always cleanup */
     curl_easy_cleanup(curl);
   }
+  return 0;
 }
 
 void testlogin()
 {
   CURL *curl;
   CURLcode res;
-  char szLine[1024];
+//  char szLine[1024];
   curl = curl_easy_init();
 
   printf("**************post data start*****************\n");
@@ -228,7 +229,7 @@ void testPing()
 {
   CURL *curl;
   CURLcode res;
-  char szLine[1024];
+  //char szLine[1024];
   curl = curl_easy_init();
 
   printf("**************post data start*****************\n");
